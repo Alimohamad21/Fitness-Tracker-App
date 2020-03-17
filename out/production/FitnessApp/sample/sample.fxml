@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="492.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="234.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fitness Tracker" wrappingWidth="327.1367492675781">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.8809524293929811" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="14.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter time played in each activity" wrappingWidth="349.13671112060547">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="results" layoutX="275.0" layoutY="342.0" mnemonicParsing="false" onAction="#setResults" prefHeight="25.0" prefWidth="119.0" text="Get Results">
+         <font>
+            <Font name="Forte" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="runInput" layoutX="190.0" layoutY="252.0" onAction="#runbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
+      <Text layoutX="32.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swimming:">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Running:">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="341.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kick Boxing:">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="341.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gym:">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="gymInput" layoutX="439.0" layoutY="253.0" onAction="#gymbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
+      <TextField fx:id="boxInput" layoutX="547.0" layoutY="171.0" onAction="#boxbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
+      <TextField fx:id="swimInput" layoutX="209.0" layoutY="171.0" onAction="#swimbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
+      <Text layoutX="14.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Calories burnt:">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Heart  rate:">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="heartbeatResult" editable="false" layoutX="198.0" layoutY="451.0" mouseTransparent="true" prefHeight="32.0" prefWidth="90.0">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="caloriesResult" editable="false" layoutX="244.0" layoutY="394.0" prefHeight="32.0" prefWidth="69.0">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font></TextField>
+      <Text layoutX="327.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="calorie" wrappingWidth="96.17578272521496">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="295.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beat/min">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="verify" layoutX="25.0" layoutY="310.0" prefHeight="21.0" prefWidth="250.0">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="clear" layoutX="582.0" layoutY="448.0" mnemonicParsing="false" onAction="#setClear" prefHeight="32.0" prefWidth="83.0" text="Reset">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="sort" layoutX="422.0" layoutY="448.0" mnemonicParsing="false" onAction="#setSort" prefHeight="32.0" prefWidth="144.0" text="Sort Activities">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" layoutX="412.0" layoutY="286.0" prefHeight="148.0" prefWidth="321.0">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font></Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
