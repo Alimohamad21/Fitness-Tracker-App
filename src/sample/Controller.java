@@ -45,59 +45,72 @@ public class Controller {
     @FXML
     Label label1;
     public void swimbutton(ActionEvent event){
-        if(Integer.signum(Integer.parseInt(swimInput.getText()))==-1) {
-            verify.setText("Invalid input");
-            verify.setTextFill(Color.web("red"));
+        try {
+            if (Integer.signum(Integer.parseInt(swimInput.getText())) == -1) {
+                verify.setText("Invalid input");
+                verify.setTextFill(Color.web("red"));
+            } else {
+                verify.setTextFill(Color.web("black"));
+                int input = Integer.parseInt(swimInput.getText()); //To get time from input and convert it to integer(input from the user is a string initially)
+                swim.calculate(input);
+                swimInput.setText("");
+                swimInput.setPromptText("");
+                verify.setText("Swimming added successfully");
+            }
         }
-        else {verify.setTextFill(Color.web("black"));
-            int input = Integer.parseInt(swimInput.getText()); //To get time from input and convert it to integer(input from the user is a string initially)
-            swim.calculate(input);
-            swimInput.setText("");
-            swimInput.setPromptText("");
-            verify.setText("Swimming added successfully");
+        catch (Exception e){verify.setText("Invalid input");
+                verify.setTextFill(Color.web("red"));}
         }
-    }
     public void gymbutton(ActionEvent event){
-        if(Integer.signum(Integer.parseInt(gymInput.getText()))==-1)
-        {
-            verify.setText("Invalid input");
-            verify.setTextFill(Color.web("red"));
-        }
-        else {verify.setTextFill(Color.web("black"));
-            int input = Integer.parseInt(gymInput.getText());
-            gym.calculate(input);
-            gymInput.setText("");
-            gymInput.setPromptText("");
-            verify.setText("Gym added successfully");
-        }
-    }
+       try {
+           if (Integer.signum(Integer.parseInt(gymInput.getText())) == -1) {
+               verify.setText("Invalid input");
+               verify.setTextFill(Color.web("red"));
+           } else {
+               verify.setTextFill(Color.web("black"));
+               int input = Integer.parseInt(gymInput.getText());
+               gym.calculate(input);
+               gymInput.setText("");
+               gymInput.setPromptText("");
+               verify.setText("Gym added successfully");
+           }
+       }
+       catch (Exception e){verify.setText("Invalid input");
+           verify.setTextFill(Color.web("red"));}
+       }
+
     public void boxbutton(ActionEvent event){
-        if(Integer.signum(Integer.parseInt(boxInput.getText()))==-1)
-        {
-            verify.setText("Invalid input");
-            verify.setTextFill(Color.web("red"));
+        try {
+            if (Integer.signum(Integer.parseInt(boxInput.getText())) <0) {
+                verify.setText("Invalid input");
+                verify.setTextFill(Color.web("red"));
+            } else {
+                verify.setTextFill(Color.web("black"));
+                int input = Integer.parseInt(boxInput.getText());
+                box.calculate(input);
+                boxInput.setText("");
+                boxInput.setPromptText("");
+                verify.setText("Kick Boxing added successfully");
+            }
+        }catch (Exception e){verify.setText("Invalid input");
+            verify.setTextFill(Color.web("red"));}
         }
-        else {verify.setTextFill(Color.web("black"));
-            int input = Integer.parseInt(boxInput.getText());
-            box.calculate(input);
-            boxInput.setText("");
-            boxInput.setPromptText("");
-            verify.setText("Kick Boxing added successfully");
-        }
-    }
     public void runbutton(ActionEvent event){
-        if(Integer.signum(Integer.parseInt(runInput.getText()))==-1)
-        {
-            verify.setText("Invalid input");
-            verify.setTextFill(Color.web("red"));
+        try {
+            if (Integer.signum(Integer.parseInt(runInput.getText())) == -1) {
+                verify.setText("Invalid input");
+                verify.setTextFill(Color.web("red"));
+            } else {
+                verify.setTextFill(Color.web("black"));
+                int input = Integer.parseInt(runInput.getText());
+                run.calculate(input);
+                runInput.setText("");
+                runInput.setPromptText("");
+                verify.setText("Running added successfully");
+            }
         }
-        else {            verify.setTextFill(Color.web("black"));
-            int input = Integer.parseInt(runInput.getText());
-            run.calculate(input);
-            runInput.setText("");
-            runInput.setPromptText("");
-            verify.setText("Running added successfully");
-        }
+        catch (Exception e){verify.setText("Invalid input");
+            verify.setTextFill(Color.web("red"));}
     }
     private static DecimalFormat df = new DecimalFormat("0.000");
     public void setResults(ActionEvent event){
