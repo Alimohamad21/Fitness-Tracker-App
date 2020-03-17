@@ -33,13 +33,29 @@
          <font>
             <Font name="Britannic Bold" size="20.0" />
          </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0816565603017807" green="0.03705057501792908" blue="0.7061403393745422" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.009137426503002644" green="0.9868420958518982" blue="0.9216617941856384" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
       </Text>
-      <Button fx:id="results" layoutX="275.0" layoutY="342.0" mnemonicParsing="false" onAction="#setResults" prefHeight="25.0" prefWidth="119.0" text="Get Results">
+      <Button fx:id="results" layoutX="275.0" layoutY="342.0" mnemonicParsing="false" onAction="#setResults" prefHeight="25.0" prefWidth="119.0" style="-fx-border-color: black;" text="Get Results">
          <font>
             <Font name="Forte" size="17.0" />
          </font>
       </Button>
-      <TextField fx:id="runInput" layoutX="190.0" layoutY="252.0" onAction="#runbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
+      <TextField fx:id="runInput" layoutX="190.0" layoutY="252.0" onAction="#runbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" style="-fx-border-color: black;" />
       <Text layoutX="32.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swimming:">
          <font>
             <Font name="Bauhaus 93" size="36.0" />
@@ -60,48 +76,38 @@
             <Font name="Bauhaus 93" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="gymInput" layoutX="439.0" layoutY="253.0" onAction="#gymbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
-      <TextField fx:id="boxInput" layoutX="547.0" layoutY="171.0" onAction="#boxbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
-      <TextField fx:id="swimInput" layoutX="209.0" layoutY="171.0" onAction="#swimbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" />
-      <Text layoutX="14.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Calories burnt:">
+      <TextField fx:id="gymInput" layoutX="439.0" layoutY="253.0" onAction="#gymbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" style="-fx-border-color: black;" />
+      <TextField fx:id="boxInput" layoutX="547.0" layoutY="171.0" onAction="#boxbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" style="-fx-border-color: black;" />
+      <TextField fx:id="swimInput" layoutX="209.0" layoutY="171.0" onAction="#swimbutton" prefHeight="25.0" prefWidth="126.0" promptText="time played(in mins)" style="-fx-border-color: black;" />
+      <Text layoutX="21.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Calories burnt:">
          <font>
             <Font name="Bauhaus 93" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Heart  rate:">
-         <font>
-            <Font name="Bauhaus 93" size="24.0" />
-         </font>
-      </Text>
-      <TextField fx:id="heartbeatResult" editable="false" layoutX="198.0" layoutY="451.0" mouseTransparent="true" prefHeight="32.0" prefWidth="90.0">
+      <TextField fx:id="heartbeatResult" editable="false" layoutX="198.0" layoutY="451.0" mouseTransparent="true" prefHeight="32.0" prefWidth="90.0" style="-fx-border-color: black;">
          <font>
             <Font name="Bauhaus 93" size="18.0" />
          </font></TextField>
-      <TextField fx:id="caloriesResult" editable="false" layoutX="244.0" layoutY="394.0" prefHeight="32.0" prefWidth="69.0">
+      <TextField fx:id="caloriesResult" editable="false" layoutX="244.0" layoutY="394.0" prefHeight="32.0" prefWidth="69.0" style="-fx-border-color: black;">
          <font>
             <Font name="Bauhaus 93" size="18.0" />
          </font></TextField>
-      <Text layoutX="327.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="calorie" wrappingWidth="96.17578272521496">
+      <Text layoutX="295.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font name="Bauhaus 93" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="295.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beat/min">
-         <font>
-            <Font name="Bauhaus 93" size="24.0" />
-         </font>
-      </Text>
-      <Label fx:id="verify" layoutX="25.0" layoutY="310.0" prefHeight="21.0" prefWidth="250.0">
+      <Label fx:id="verify" layoutX="25.0" layoutY="310.0" prefHeight="21.0" prefWidth="250.0" textFill="#10a2c4">
          <font>
             <Font name="Forte" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="clear" layoutX="582.0" layoutY="448.0" mnemonicParsing="false" onAction="#setClear" prefHeight="32.0" prefWidth="83.0" text="Reset">
+      <Button fx:id="clear" layoutX="582.0" layoutY="448.0" mnemonicParsing="false" onAction="#setClear" prefHeight="32.0" prefWidth="83.0" style="-fx-border-color: black;" text="Reset">
          <font>
             <Font name="Bauhaus 93" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="sort" layoutX="422.0" layoutY="448.0" mnemonicParsing="false" onAction="#setSort" prefHeight="32.0" prefWidth="144.0" text="Sort Activities">
+      <Button fx:id="sort" layoutX="422.0" layoutY="448.0" mnemonicParsing="false" onAction="#setSort" prefHeight="32.0" prefWidth="144.0" style="-fx-border-color: black;" text="Sort Activities">
          <font>
             <Font name="Bauhaus 93" size="18.0" />
          </font>
@@ -110,6 +116,21 @@
          <font>
             <Font name="Bodoni MT Black" size="14.0" />
          </font></Label>
+      <Text layoutX="21.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total heart rate:">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="325.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="calorie">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="303.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="beat/min">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Text>
    </children>
    <cursor>
       <Cursor fx:constant="DEFAULT" />

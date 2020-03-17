@@ -3,17 +3,22 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import sample.Activities.*;
-import java.math.RoundingMode;
+
 import java.text.DecimalFormat;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionListener;
-import java.beans.EventHandler;
-import org.w3c.dom.Text;
+
 import javafx.scene.paint.Color;
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
+
+
 
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -44,13 +49,14 @@ public class Controller {
     Button sort;
     @FXML
     Label label1;
+
     public void swimbutton(ActionEvent event){
         try {
             if (Integer.signum(Integer.parseInt(swimInput.getText())) == -1) {
                 verify.setText("Invalid input");
                 verify.setTextFill(Color.web("red"));
             } else {
-                verify.setTextFill(Color.web("black"));
+                verify.setTextFill(Color.web("aqua"));
                 int input = Integer.parseInt(swimInput.getText()); //To get time from input and convert it to integer(input from the user is a string initially)
                 swim.calculate(input);
                 swimInput.setText("");
@@ -67,7 +73,7 @@ public class Controller {
                verify.setText("Invalid input");
                verify.setTextFill(Color.web("red"));
            } else {
-               verify.setTextFill(Color.web("black"));
+               verify.setTextFill(Color.web("grey"));
                int input = Integer.parseInt(gymInput.getText());
                gym.calculate(input);
                gymInput.setText("");
@@ -85,7 +91,7 @@ public class Controller {
                 verify.setText("Invalid input");
                 verify.setTextFill(Color.web("red"));
             } else {
-                verify.setTextFill(Color.web("black"));
+                verify.setTextFill(Color.web("brown"));
                 int input = Integer.parseInt(boxInput.getText());
                 box.calculate(input);
                 boxInput.setText("");
@@ -101,7 +107,7 @@ public class Controller {
                 verify.setText("Invalid input");
                 verify.setTextFill(Color.web("red"));
             } else {
-                verify.setTextFill(Color.web("black"));
+                verify.setTextFill(Color.web("green"));
                 int input = Integer.parseInt(runInput.getText());
                 run.calculate(input);
                 runInput.setText("");
