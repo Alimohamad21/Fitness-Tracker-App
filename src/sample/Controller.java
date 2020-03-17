@@ -81,7 +81,7 @@ public class Controller {
 
     public void boxbutton(ActionEvent event){
         try {
-            if (Integer.signum(Integer.parseInt(boxInput.getText())) <0) {
+            if (Integer.signum(Integer.parseInt(boxInput.getText()))==-1) {
                 verify.setText("Invalid input");
                 verify.setTextFill(Color.web("red"));
             } else {
