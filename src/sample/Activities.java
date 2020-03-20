@@ -1,11 +1,12 @@
 package sample;
+
 public class Activities {
     public static int totalCalories=0;      //global variables so all activities contribute to the total calories/heart rate
     public  static double totalHeartRate=80;
 
     public static abstract class Sport{
-        int Calories=0;
-        double HeartRate=0; //All activities share the same two variables (not necessary,just to avoid repetition)
+       public int Calories=0;
+       public double HeartRate=0; //All activities share the same two variables (not necessary,just to avoid repetition)
     }
 
     public static class Swimming extends Sport{

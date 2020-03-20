@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$KickBoxing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$KickBoxing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$Running.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$Running.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$Sport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$Sport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$StrengthTraining.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$StrengthTraining.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$Swimming.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities$Swimming.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Activities.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FitnessApp/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FitnessApp/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Activities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Activities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
@@ -62,9 +68,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
+        <option value="package-info" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -98,11 +105,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/assignment_1_6268-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\handasa\Programming II\FitnessApp\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -214,37 +226,45 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1584465795983" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1584702147090">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1584702147090" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1584465696652">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584465696652" />
-    <state width="1222" height="168" key="GridCell.Tab.0.bottom" timestamp="1584466458769">
+    <state width="1237" height="174" key="GridCell.Tab.0.bottom" timestamp="1584710841860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="168" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584466458769" />
-    <state width="1222" height="168" key="GridCell.Tab.0.center" timestamp="1584466458769">
+    <state width="1237" height="174" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584710841860" />
+    <state width="1237" height="174" key="GridCell.Tab.0.center" timestamp="1584710841860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="168" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584466458769" />
-    <state width="1222" height="168" key="GridCell.Tab.0.left" timestamp="1584466458769">
+    <state width="1237" height="174" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584710841860" />
+    <state width="1237" height="174" key="GridCell.Tab.0.left" timestamp="1584710841860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="168" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584466458769" />
-    <state width="1222" height="168" key="GridCell.Tab.0.right" timestamp="1584466458769">
+    <state width="1237" height="174" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584710841860" />
+    <state width="1237" height="174" key="GridCell.Tab.0.right" timestamp="1584710841860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1222" height="168" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584466458769" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1583576474774">
+    <state width="1237" height="174" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584710841860" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1584708867580">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583576474774" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1584465630921">
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584708867580" />
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1584709771288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584465630921" />
-    <state x="91" y="43" key="new project wizard" timestamp="1583665011389">
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584709771288" />
+    <state x="91" y="43" key="new project wizard" timestamp="1584708691351">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="91" y="43" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1583665011389" />
+    <state x="91" y="43" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1584708691351" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1584467703774">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584467703774" />
   </component>
 </project>
